@@ -3,12 +3,12 @@ module.exports = ({ env }) => ({
     config: {
       provider: 'strapi-provider-upload-do',
       providerOptions: {
-        key: env('DO_SPACE_ACCESS_KEY'),
-        secret: env('DO_SPACE_SECRET_KEY'),
-        endpoint: env('DO_SPACE_ENDPOINT', 'fra1.digitaloceanspaces.com'),
-        space: env('DO_SPACE_BUCKET', 'daylix'),
-        directory: env('DO_SPACE_DIRECTORY', 'uploads'),
-        cdn: env('DO_SPACE_CDN', 'https://daylix.fra1.digitaloceanspaces.com')
+        key: process.env.DO_SPACE_ACCESS_KEY,
+        secret: process.env.DO_SPACE_SECRET_KEY,
+        endpoint: process.env.DO_SPACE_ENDPOINT,
+        space: process.env.DO_SPACE_BUCKET,
+        directory: process.env.DO_SPACE_DIRECTORY,
+        cdn: process.env.DO_SPACE_CDN
       },
     },
   },
