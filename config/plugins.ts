@@ -1,5 +1,4 @@
 export default ({ env }) => {
-  console.log(env("DO_SPACE_ACCESS_KEY"));
   return ({
     upload: {
       config: {
