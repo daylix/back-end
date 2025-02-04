@@ -63,6 +63,12 @@
       "relation": "oneToMany",
       "target": "api::reaction.reaction",
       "mappedBy": "post"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "posts"
     }
   }
 }
