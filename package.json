@@ -14,6 +14,7 @@
     "@aws-sdk/client-s3": "^3.740.0",
     "@aws-sdk/lib-storage": "^3.740.0",
     "@aws-sdk/middleware-flexible-checksums": "^3.735.0",
+    "@sklinet/strapi-plugin-video-field": "^1.1.0",
     "@strapi/plugin-cloud": "5.8.0",
     "@strapi/plugin-graphql": "^5.8.1",
     "@strapi/plugin-users-permissions": "5.8.0",

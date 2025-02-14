@@ -1,5 +1,8 @@
 export default ({ env }) => {
   return ({
+    "video-field":{
+      enabled: true
+    },
     upload: {
       config: {
         provider: "aws-s3",
@@ -18,5 +21,5 @@ export default ({ env }) => {
         },
       },
     },
-});
+  });
 };

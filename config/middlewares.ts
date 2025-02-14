@@ -6,25 +6,37 @@ module.exports = [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
+          'frame-src': [
+            "'self'",
+            'youtube.com',
+            'www.youtube.com',
+            'vimeo.com',
+            '*.vimeo.com',
+            'facebook.com',
+            'www.facebook.com'
+          ],
+          'connect-src': [
+            "'self'",
+            'https:'
+          ],
           'img-src': [
             "'self'",
             'data:',
             'blob:',
             'dl.airtable.com',
-            '*.digitaloceanspaces.com',
+            '*.digitaloceanspaces.com'
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
             'dl.airtable.com',
-            '*.digitaloceanspaces.com',
+            '*.digitaloceanspaces.com'
           ],
-          upgradeInsecureRequests: null,
-        },
-      },
-    },
+          'upgrade-insecure-requests': null
+        }
+      }
+    }
   },
   'strapi::cors',
   'strapi::poweredBy',
@@ -33,5 +45,5 @@ module.exports = [
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
-  'strapi::public',
+  'strapi::public'
 ];
