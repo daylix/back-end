@@ -80,6 +80,15 @@
       "targetField": "title",
       "required": true,
       "minLength": 3
+    },
+    "youtube": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "customField": "plugin::video-field.video"
     }
   }
 }

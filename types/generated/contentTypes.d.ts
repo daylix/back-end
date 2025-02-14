@@ -527,6 +527,13 @@ export interface ApiPostPost extends Struct.CollectionTypeSchema {
       'manyToOne',
       'plugin::users-permissions.user'
     >;
+    youtube: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'plugin::video-field.video'> &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
   };
 }
 
