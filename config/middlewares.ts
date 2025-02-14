@@ -32,8 +32,7 @@ module.exports = [
             'blob:',
             'dl.airtable.com',
             '*.digitaloceanspaces.com'
-          ],
-          'upgrade-insecure-requests': null
+          ]
         }
       }
     }
